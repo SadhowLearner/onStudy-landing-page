@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Landing page for the onStudy web app.",
   "scripts": {
-    "dev": "parcel src/index.html -p 1234",
+    "cleanup": "rmdir /q /s .parcel-cache dist",
+    "dev": "npm run cleanup && parcel src/index.html -p 1234",
     "build" : "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

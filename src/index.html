@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>onStudy</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="font.css">
   </head>
-  <body>
+  <body style="background-color: #F8F9FA;">
     <!-- Header and navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 poppins">
       <div class="container-fluid">
-        <div class="flex justify-content-center align-items-center">
+        <a class="d-flex justify-content-center align-items-center navbar-brand" href="">
           <img
             src="https://placehold.co/400"
             alt="onStudy Logo"
             style="width: 40px; height: 40px"
-            class="rounded-circle me-2"
+            class="rounded-circle me-4"
           />
-          <a class="navbar-brand" href="#">onStudy</a>
-        </div>
+          <h2 class="fw-bold">onStudy</h2>
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -37,19 +36,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto my-4 my-lg-0">
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="#hero">Beranda</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="#fitur">Fitur</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="#testimonial">Testimonial</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="#faq">FAQ</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="#footer">Tentang & Kontak</a>
             </li>
           </ul>
@@ -62,55 +61,52 @@
     <section id="hero" class="container">
       <div class="row pe-lg-5">
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center order-2 order-lg-2">
-          <h1 class="px-4 px-lg-0 mb-4 text-center text-lg-start">Lorem ipsum dolor sit amet consectetur</h1>
+          <h1 class="px-4 px-lg-0 mb-4 text-center text-lg-start">Belajar jadi lebih seru dengan <span class="fw-semibold" style="color: #28A745;">onStudy</span>!</h1>
           <p class="mb-4 px-4 px-lg-0" style="text-align: justify;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-            voluptatibus unde veniam quaerat natus atque dolorem quisquam, illum
-            accusamus sed est totam corrupti eligendi mollitia odio incidunt?
-            Eaque, earum nostrum.
+            Belajar hal baru seharusnya menjadi pengalaman yang <span class="fw-bold">mengasyikkan</span>, namun pada kenyataannya, seringkali <span class="fw-bold text-danger">berbanding terbalik</span>. Dengan <span class="fw-semibold" style="color: #28A745;">onStudy</span>, kamu dapat menciptakan lingkungan belajar yang <span class="fw-bold">menarik</span>, <span class="fw-bold">interaktif</span>, dan <span class="fw-bold">efektif</span>. 📚✨
           </p>
           <div class="align-self-lg-start">
-            <button type="button" class="btn btn-success me-4">Button</button>
-            <button type="button" class="btn btn-outline-success">Button</button>
+            <a href="#" class="btn btn-lg fs-6 btn-success me-4">Coba sekarang!</a>
+            <a href="#fitur" class="btn btn-lg fs-6 btn-outline-success">Pelajari lebih lanjut</a>
           </div>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center order-1 order-lg-2 mb-4 mb-lg-0">
-          <img src="https://placehold.co/400/png" alt="Hero Image" class="align-self-lg-end" style="width: 240px; height: 240px;" />
+          <img src="assets/Hero.svg" alt="Hero Image" class="align-self-lg-end" style="width: 30vw; height: 30vw;" />
         </div>
       </div>
     </section>
 
     <!-- Fitur section -->
     <br class="my-5"/><br class="my-5"/>
-    <section id="fitur" class="container">
-      <h1 class="text-center text-lg-start">Lorem</h1>
-      <p class="mb-4 text-center text-lg-start">Lorem ipsum sit dolor amet</p>
+    <section id="fitur" class="container roboto">
+      <h1 class="text-center text-lg-start">Fitur-fitur <span class="fw-semibold" style="color: #28A745;">onStudy</span></h1>
+      <p class="mb-4 text-center text-lg-start">Kamu bakal dapet apa aja?</p>
       <br/>
       <div class="row">
         <div class="col-12 col-lg-4 d-flex justify-content-center align-content-center">
-          <div class="card me-lg-4 mb-lg-0 mb-4" style="width: 18rem;">
-            <img src="https://placehold.co/400" class="card-img-top" alt="fitur1">
+          <div class="card me-lg-4 mb-lg-0 mb-4" style="height: fit-content; width: 30rem; background: linear-gradient(#FBCA6B, #fff);">
+            <img src="assets/Fitur1.svg" width="200" height="200" class="card-img-top p-4" alt="Ruang kelas virtual">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title fw-bold mb-3">Ruang Kelas Virtual</h5>
+              <p class="card-text opacity-50" style="text-align: justify;">Semua fitur yang kamu butuhin di <span class="fw-bold">ruang kelas</span>, mulai dari <span class="fw-bold">pematerian</span>, <span class="fw-bold">tugas</span>, dan <span class="fw-bold">kuis berwaktu</span>!</p>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 d-flex justify-content-center align-content-center">
-          <div class="card me-lg-4 mb-lg-0 mb-4" style="width: 18rem;">
-            <img src="https://placehold.co/400" class="card-img-top" alt="fitur1">
+          <div class="card me-lg-4 mb-lg-0 mb-4" style="height: fit-content; width: 30rem; background: linear-gradient(#B8C7FF, #fff)">
+            <img src="assets/Fitur2.svg" width="200" height="200" class="card-img-top p-4" alt="Forum guru dan siswa">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title fw-bold mb-3">Forum Guru dan Siswa</h5>
+              <p class="card-text opacity-50" style="text-align: justify;">Bingung ngerjain tugas yang <span class="fw-bold">susah</span>? Sekarang kamu bisa <span class="fw-bold">diskusi</span> bersama <span class="fw-bold">guru</span> dan <span class="fw-bold">teman</span> secara <span class="fw-bold">online</span>!</p>
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-4 d-flex justify-content-center align-content-center">
-          <div class="card me-lg-4 mb-lg-0 mb-4" style="width: 18rem;">
-            <img src="https://placehold.co/400" class="card-img-top" alt="fitur1">
+          <div class="card me-lg-4 mb-lg-0 mb-4" style="height: fit-content; width: 30rem; background: linear-gradient(#EBCC99, #fff)">
+            <img src="assets/Fitur3.svg" width="200" height="200" class="card-img-top p-4" alt="Rapor virtual">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title fw-bold mb-3">Rapor Virtual</h5>
+              <p class="card-text opacity-50" style="text-align: justify;">Bangun <span class="fw-bold">integritas</span> pendidikanmu dengan melacak <span class="fw-bold">progress</span> pembelajaranmu di fitur rapor virtual <span class="fw-semibold" style="color: #28A745;">onStudy</span>!</p>
             </div>
           </div>
         </div>
@@ -129,11 +125,11 @@
           <p class="text-center mb-4">Former US President</p>
           <p class="text-center px-4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem voluptates commodi at rerum ab tempora eligendi aspernatur excepturi laudantium velit tempore neque voluptatum, dolore quod sint consequatur praesentium id?"</p>
           <div class="flex flex-column justify-content-center align-items-center">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/Star.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/Star.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
           </div>
         </div>
         <div class="col-12 col-lg-4 mb-4 mb-lg-0 d-flex flex-column justify-content-center align-items-center">
@@ -142,11 +138,11 @@
           <p class="text-center mb-4">Former US President</p>
           <p class="text-center px-4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem voluptates commodi at rerum ab tempora eligendi aspernatur excepturi laudantium velit tempore neque voluptatum, dolore quod sint consequatur praesentium id?"</p>
           <div class="flex flex-column justify-content-center align-items-center">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/Star.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/Star.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
           </div>
         </div>
         <div class="col-12 col-lg-4 mb-4 mb-lg-0 d-flex flex-column justify-content-center align-items-center">
@@ -155,11 +151,11 @@
           <p class="text-center mb-4">Former US President</p>
           <p class="text-center px-4">"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus exercitationem voluptates commodi at rerum ab tempora eligendi aspernatur excepturi laudantium velit tempore neque voluptatum, dolore quod sint consequatur praesentium id?"</p>
           <div class="flex flex-column justify-content-center align-items-center">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
-            <img src="/assets/Star.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/StarFill.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
+            <img src="assets/Star.svg" alt="Star Fill" style="width: 16px; height: 16px;" class="me-2">
           </div>
         </div>
       </div>
@@ -269,9 +265,7 @@
     </section>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
+      src="bootstrap.bundle.js"
     ></script>
   </body>
 </html>
